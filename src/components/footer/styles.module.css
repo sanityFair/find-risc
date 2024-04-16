@@ -1,0 +1,39 @@
+@import url('/src/shared/variables/index.css');
+
+.root {
+  background-color: var(--header-color);
+
+  & > div {
+    @mixin max-content;
+    padding: var(--gap-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    & > :first-child {
+      margin-top: var(--gap-m);
+    }
+  }
+
+  & .item {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: var(--gap-s);
+  }
+
+  & .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: var(--gap-m);
+  }
+
+  & .text {
+    @mixin text;
+    color:#fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

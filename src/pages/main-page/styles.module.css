@@ -1,41 +1,11 @@
-@import url("/src/shared/variables/index.css");
+@import url('/src/app/themes/index.css');
 
 .root {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: max-content 1fr 377px;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-
-  header {
     display: grid;
     grid-template-columns: 1fr;
-
-    & > :first-child {
-      background-color: var(--header-color);
-      height: 77px;
-    }
-
-    & h2 {
-      @mixin max-content;
-      @mixin title;
-      padding: var(--gap-m);
-    }
-
-    & img {
-      @mixin max-content;
-      width: 100%;
-      height: auto;
-      padding: var(--gap-m);
-    }
-  }
-
-  & section {
-    @mixin max-content;
-    padding: var(--gap-m);
-    width:100%;
-    margin-bottom:var(--gap-2xl);
-  }
+    grid-template-rows: max-content 1fr 377px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
 }

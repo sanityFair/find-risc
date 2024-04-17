@@ -1,3 +1,25 @@
-.root {
-    
+@import url('/src/app/themes/index.css');
+
+.btn {
+    width: 360px;
+    margin: 0 auto;
+
+    & span {
+        @mixin button-text;
+    }
+
+    & span[class*='icon'] {
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        opacity: 1;
+    }
+
+    &:hover span[class*='icon'] {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 900px) {
+    .btn {
+        width: 100%;
+    }
 }

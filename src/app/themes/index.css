@@ -1,0 +1,66 @@
+:root {
+    --bg-color: #f0f0f5;
+    --header-color: #2c6086;
+    --orange-color: #e46f50;
+    --orange-hover-color: #f1b287;
+    --orange-active-color: #e46f50;
+    --opacity-disabled: 0.3;
+    --table-header-color: #0d446c;
+    --low-color: #dbdef8;
+    --slightly-low-color: #c5caee;
+    --middle-color: #9ba4e6;
+    --high-color: #7e88d2;
+    --very-high-color: #6c76bc;
+    --font-color: #0c0c0c;
+
+    --gap-3xs: 2px;
+    --gap-2xs: 4px;
+    --gap-xs: 8px;
+    --gap-s: 12px;
+    --gap-m: 16px;
+    --gap-l: 20px;
+    --gap-xl: 24px;
+    --gap-2xl: 48px;
+}
+
+@define-mixin title {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: clamp(28px, 4vw, 40px);
+    font-style: italic;
+    line-height: 45px;
+
+    color: #0c0c0c;
+}
+
+@define-mixin description {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@define-mixin text {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #0c0c0c;
+}
+
+@define-mixin max-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@define-mixin button-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,36 @@
+@import url('/src/app/themes/index.css');
+
+.btn {
+    width: 360px;
+
+    & span {
+        @mixin button-text;
+    }
+
+    & span[class*='icon'] {
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        opacity: 1;
+    }
+
+    &:hover span[class*='icon'] {
+        opacity: 0.5;
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+    }
+}
+
+.icon {
+    margin-left: var(--gap-s);
+}
+
+@media (max-width: 900px) {
+    .root {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

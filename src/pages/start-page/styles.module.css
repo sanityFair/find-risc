@@ -1,0 +1,18 @@
+@import url('/src/app/themes/index.css');
+
+.root {
+    background-color: var(--bg-color);
+    padding: var(--gap-m);
+
+    & p {
+        @mixin text;
+    }
+
+    & button {
+        width: 360px;
+
+        & span {
+            @mixin button-text;
+        }
+    }
+}

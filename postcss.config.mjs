@@ -3,9 +3,9 @@ import tailwindcss from 'tailwindcss';
 import postcssMixins from 'postcss-mixins';
 
 export default {
-  plugins: {
-    tailwindcss,
-    autoprefixer,
-    'postcss-mixins':postcssMixins
-  }
-}
+    plugins: {
+        tailwindcss,
+        autoprefixer,
+        'postcss-mixins': postcssMixins,
+    },
+};

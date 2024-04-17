@@ -1,24 +1,11 @@
-import styles from "./styles.module.css";
-import { Outlet } from "react-router-dom";
-import bannerUrl from "@/assets/banner.svg";
-import { Footer } from "components";
+import { Content, Footer, Header } from 'widgets';
 
-export const MainPage = () => {
-  return (
+import styles from './styles.module.css';
+
+export const MainPage = () => (
     <main className={styles.root}>
-      <header>
-        <div/>
-        <h2>
-          Тест для оценки риска развития сахарного диабета 2 типа (шкала
-          FINDRISC)
-        </h2>
-        <img alt="Картинка" src={bannerUrl} />
-      </header>
-      <section>
-          Contnet
-        <Outlet />
-      </section>
-      <Footer/>
+        <Header />
+        <Content />
+        <Footer />
     </main>
-  );
-};
+);

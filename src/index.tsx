@@ -1,9 +1,7 @@
-import { MainPage } from 'pages'
-import { createRoot } from 'react-dom/client'
-import 'tailwindcss/tailwind.css';
-import 'index.css'
+import { App } from 'app';
+import { createRoot } from 'react-dom/client';
 
-const container = document.getElementById('root') as HTMLDivElement
-const root = createRoot(container)
+const container = document.getElementById('root') as HTMLDivElement;
+const root = createRoot(container);
 
-root.render(<MainPage />)
+root.render(<App />);

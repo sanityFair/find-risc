@@ -1,0 +1,33 @@
+.root {
+    background-color: var(--bg-color);
+    padding: var(--gap-m);
+}
+
+.label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+}
+
+.form {
+    & label[for] {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333;
+    }
+
+    & [class*='ant-radio-inner'],
+    [class*='ant-radio-inner']::after {
+        border-radius: 0;
+        border-color: #333;
+    }
+
+    & [class*='ant-radio-checked'] > span[class*='inner'] {
+        border-color: #333;
+        background-color: #333;
+    }
+}

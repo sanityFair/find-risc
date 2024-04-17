@@ -1,0 +1,36 @@
+.root {
+    background-color: var(--bg-color);
+    padding: var(--gap-m);
+    display: grid;
+    column-gap: var(--gap-m);
+    grid-template-columns: 1fr 285px;
+
+    & p:first-child {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333;
+    }
+
+    & p:last-child {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333;
+    }
+}
+
+@media (max-width: 900px) {
+    .root {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--gap-m);
+
+        & > div > img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
